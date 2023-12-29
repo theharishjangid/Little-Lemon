@@ -1,26 +1,28 @@
-import React from 'react'
+import React from 'react';
+import './nav.css';
+import { NavButton } from '../../components';
 
 const Nav = () => {
   return (
-    <nav>
-      <li>
-        <a href="#home">Home</a>
-      </li>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#menu">Menu</a>
-      </li>
-      <li>
-        <a href="#reservations">Reservations</a>
-      </li>
-      <li>
-        <a href="#order-online">Order Online</a>
-      </li>
-      <li>
-        <a href="#login">Login</a>
-      </li>
+    <nav className='nav'>
+      <div>
+        <NavButton name="Home" />
+      </div>
+      <div>
+        <NavButton name="About" />
+      </div>
+      <div>
+        <NavButton name="Menu" />
+      </div>
+      <div>
+      <NavButton name="Reservations" />
+      </div>
+      <div>
+      <NavButton name="Order Online" />
+      </div>
+      <div>
+        <NavButton name="Login" />
+      </div>
     </nav>
   )
 }

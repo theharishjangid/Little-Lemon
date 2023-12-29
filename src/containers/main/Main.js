@@ -1,14 +1,14 @@
 import React from 'react'
 import Hero from '../../hero/Hero'
 import './main.css'
+import Cards from '../../cards/cards'
 
 const Main = () => {
   return (
     <main className='main'>
       <Hero />
-      <div>
-        Cards
-      </div>
+      <div className='empty-space'></div>
+      <Cards />
       <div>
         Testimonials
       </div>

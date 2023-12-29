@@ -1,0 +1,17 @@
+.primary_button {
+    display: flex;
+    width: 200px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #F4CE14;
+    color: #495E57;
+    text-align: center;
+    font-family: 'Markazi Text';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -1,0 +1,29 @@
+.cards-layout {
+    background-color: white;
+    margin: 0 10%;
+    border-radius: 16px;
+    background: #FFF;
+    padding: 20px;
+}
+
+.cards-header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+.title {
+    color: #010101;
+    font-family: 'Markazi Text';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}

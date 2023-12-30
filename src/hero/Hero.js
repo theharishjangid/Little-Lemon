@@ -12,9 +12,7 @@ const Hero = () => {
             <div className='hero-desc'>Little Lemons Restaurant is a cozy culinary haven nestled in the heart of Chicago, offering a delightful fusion of fresh flavors and warm ambiance. </div>
             <PrimaryButton name="Reserve A Table" />
         </div>
-        <div className='hero-img'>
-            <img src={Pic} alt="hero-img" width='440px' height='464px'/>
-        </div>
+        <img src={Pic} alt="hero" className='hero-img' />
     </div>
   )
 }

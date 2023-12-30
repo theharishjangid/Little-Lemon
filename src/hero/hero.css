@@ -11,9 +11,12 @@
 }
 
 .hero-img {
-    padding-top: 48px;
+    margin-top: 48px;
     align-self: normal;
+    width: 440px;
+    height: 464px;
     filter: drop-shadow(-6px 6px 10px rgba(244, 206, 20, 0.20)) drop-shadow(6px -6px 10px rgba(244, 206, 20, 0.20));
+    border-radius: 16px;
 }
 
 .hero-title {
@@ -27,7 +30,7 @@
 }
 .hero-subtitle {
     color: #FFF;
-    font-family: Markazi Text;
+    font-family: 'Markazi Text';
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -41,7 +44,7 @@
     height: 79px;
     flex-shrink: 0;
     color: #FFF;
-    font-family: Markazi Text;
+    font-family: 'Markazi Text';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

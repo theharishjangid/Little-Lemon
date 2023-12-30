@@ -2,19 +2,16 @@ import React from 'react'
 import Hero from '../../hero/Hero'
 import './main.css'
 import Cards from '../../cards/cards'
+import Testimonials from '../../testimonials/testimonials'
+import About from '../../about/about'
 
 const Main = () => {
   return (
     <main className='main'>
       <Hero />
-      <div className='empty-space'></div>
       <Cards />
-      <div>
-        Testimonials
-      </div>
-      <div>
-        About Us
-      </div>
+      <Testimonials />
+      <About />
     </main>
   )
 }

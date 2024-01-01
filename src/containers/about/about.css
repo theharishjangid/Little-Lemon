@@ -1,0 +1,133 @@
+.app__about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0 2rem;
+    padding: 2rem;
+    background-color: var(--bg-color);
+}
+
+.app__about-container{
+    display: flex;
+    padding: 2rem;
+}
+
+.app__about-title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+
+.app__about-title p{
+    display: flex;
+    color: var(--highlight-color-dark);
+    font-family: var(--font-base);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.app__about-title h3{
+    color: var(--highlight-color-dark);
+}
+
+.image-1 {
+    width: 430px;
+    border-radius: 13.685px;
+    box-shadow: -5.132px 5.132px 4.276px 0px rgba(0, 0, 0, 0.38);
+    position: relative;
+    left: 50%;
+}
+
+.image-2 {
+    width: 430px;
+    border-radius: 13.685px;
+    box-shadow: -5.132px 5.132px 4.276px 0px rgba(0, 0, 0, 0.38);
+    position: relative;
+    top: 30%;
+    right: 30%;
+}
+
+@media screen and (max-width: 1200px){
+    .image-1 {
+        width: 300px;
+    }
+    .image-2 {
+        width: 300px;
+    }
+    .app__about-title p{
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+    .app__about-title h3{
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+    .app__about-title h1{
+        font-size: 3rem;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .app__about-container{
+        flex-direction: column;
+    }
+    .app__about-images{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .image-1 {
+        width: 250px;
+        top: 0;
+        right: 0;
+        left: 0;
+        align-self: center;
+        margin: 1rem;
+    }
+    .image-2 {
+        width: 250px;
+        top: 0;
+        right: 0;
+        left: 0;
+        align-self: center;
+        margin: 1rem;
+    }
+    .app__about-title p{
+        font-size: 0.75rem;
+        padding: 0.75rem 0;
+    }
+    .app__about-title h3{
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .app__about-title h1{
+        font-size: 2rem;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .app__about {
+        margin-top: 1rem;
+        padding: 1rem
+    }
+    .app__about-container{
+        padding: 0rem;
+    }
+    .app__about-images{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-1 {
+        width: 200px;
+    }
+    .image-2 {
+        width: 200px;
+    }
+}

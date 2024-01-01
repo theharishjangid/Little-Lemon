@@ -1,20 +1,28 @@
 import React from 'react';
-import { Header, Main, Footer } from './containers';
+import { Nav, Header, Cards, Testimonials, About, Footer, Reservations } from './containers';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css'
 
 
 function App() {
   return (
-    <React.Fragment>
-      <Header/>
-      <BrowserRouter>
+    <BrowserRouter>
+      <React.Fragment>
         <Routes>
-        <Route path="/" element={<Main />}></Route>
-          <Route path="/booking"></Route>
+          <Route path="/" element={
+            <React.Fragment>
+              <Nav />
+              <Header />
+              <Cards />
+              <Testimonials />
+              <About />
+              <Footer/>
+            </React.Fragment>
+          }></Route>
+          <Route path="/reservations" element={<Reservations />}></Route>
         </Routes>
-      </BrowserRouter>
-      <Footer/>
-    </React.Fragment>
+      </React.Fragment>
+    </BrowserRouter>
   );
 }
 

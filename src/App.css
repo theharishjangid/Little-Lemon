@@ -1,0 +1,59 @@
+.app__flex {
+display: flex;
+justify-content: center;
+align-items: center
+}
+
+.p-text {
+font-size: 0.8rem;
+text-align: left;
+color: var(--gray-color);
+line-height: 1.5;
+}
+
+h1{
+    color: var(--secondary-color);
+    font-family: var(--font-base);
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 55px;
+}
+
+h2{
+    color: var(--highlight-color-dark);
+    font-family: var(--font-base);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    flex: 1
+}
+
+h3{
+    color: var(--white-color);
+    font-family: var(--font-base);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+}
+
+@media screen and (min-width: 2000px) {
+    .p-text {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    h2{
+        font-size: 30px;
+        line-height: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    h2{
+        font-size: 25px;
+    }
+}

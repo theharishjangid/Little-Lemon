@@ -1,0 +1,80 @@
+.app__reservations{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.app__reservations h1{
+    margin: 2rem;
+}
+
+.app__reservations__form-container {
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    margin: 1rem 4rem 4rem 4rem;
+}
+
+.app__reservations__form-container img{
+    width:50%
+}
+.app__reservations__form-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem;
+}
+
+.app__reservations__input-container {
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.app__reservations__form-container p {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.755);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    font-size: small;
+}
+
+select, input[type='date'], input[type="number"], option{
+    width: 200px;
+    padding: 0.6rem 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 0 4px 4px 0;
+    border: none;
+    outline: none;
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+}
+
+label{
+    width: 100%;
+    color: var(--secondary-color);
+    font-family: var(--font-secondary);
+    padding: 0.5rem 1rem;
+}
+
+.submit-btn{
+    align-self:center;
+}
+
+sup {
+    color: red;
+    top: -2px;
+    font-size: 95%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }

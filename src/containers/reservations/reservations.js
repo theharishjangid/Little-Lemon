@@ -11,7 +11,7 @@ const Reservations = (props) => {
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
-  const availableTimes = props.availableTimes
+  const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,10 +32,10 @@ const Reservations = (props) => {
     <div className='app__reservations'>
       <div className='app__reservations-title'>
         <h1>Reservations</h1>
-        <Link to="/" className='back_button'><img src={Cross}/></Link>
+        <Link to="/" className='back_button'><img src={Cross} alt="cross-logo"/></Link>
       </div>
       <div className='app__reservations__form-container'>
-        <img src={bgImage} alt='restaurant' />
+        <img src={bgImage} alt='restaurant'/>
         <form className='app__reservations__form-box' onSubmit={handleSubmit}>
           <div className='app__reservations__input-container'>
             <label htmlFor="res-date">Choose date<sup>*</sup> </label>

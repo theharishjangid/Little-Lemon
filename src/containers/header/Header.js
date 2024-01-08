@@ -10,7 +10,7 @@ const Header = () => {
         <h1>Little Lemons</h1>
         <h3>Chicago</h3>
         <p>Little Lemons Restaurant is a cozy culinary haven nestled in the heart of Chicago, offering a delightful fusion of fresh flavors and warm ambiance.</p>
-        <PrimaryButton name="Reserve A Table" />
+        <PrimaryButton name="Reserve A Table" link="/reservations"/>
       </div>
       <div className='app__header__image'>
         <img src={Pic} alt="hero"/>

@@ -1,17 +1,24 @@
 .primary_button {
     display: flex;
-    width: 200px;
-    height: 60px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
+    border: none;
     border-radius: 16px;
-    background: #F4CE14;
-    color: #495E57;
-    text-align: center;
-    font-family: 'Markazi Text';
-    font-size: 20px;
-    font-style: normal;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: var(--font-base);
+    font-size: 22px;
     font-weight: 400;
-    line-height: normal;
+    padding: 0.5rem 1rem;
+    box-shadow: 2px 2px 2px rgb(127, 124, 100);
+    cursor: pointer;
+}
+
+.primary_button:hover{
+    border: solid 1px var(--secondary-color);
+}
+
+.primary_button-link {
+    text-decoration: none;
+    width: fit-content;
 }

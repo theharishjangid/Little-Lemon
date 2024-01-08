@@ -27,6 +27,8 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     flex-wrap: wrap;
+    max-width: 400px;
+
 }
 .app__header__image{
     flex: 1;

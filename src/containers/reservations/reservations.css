@@ -2,7 +2,7 @@
     display: flex;
     align-items:center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--primary-color);
 }
 
@@ -29,7 +29,7 @@
 }
 
 .app__reservations__input-container {
-    width: 100%;
+    width: 95%;
     border: 1px solid var(--secondary-color);
     display: flex;
     align-items: center;
@@ -78,3 +78,91 @@ sup {
     position: relative;
     vertical-align: baseline;
   }
+
+.app__reservations-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem;
+    padding: 0 5rem;
+}
+
+.back_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back_button img{
+    width:20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 850px){
+    .app__reservations__input-container {
+        margin: 1rem 0.5rem;
+    }
+    .app__reservations__form-container {
+        border: 1.5px solid var(--secondary-color);
+        display: flex;
+        margin: 2rem;
+    }
+    .app__reservations-title h1{
+        font-size: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .app__reservations__form-container img{
+        width: 40%;
+    }
+    .app__reservations__form-box{
+        width: 60%;
+    }
+    .app__reservations__form-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .app__reservations__form-container {
+        border: 1px solid var(--secondary-color);
+        flex-direction: column;
+        margin: 1rem 2rem 4rem 2rem;
+    }
+    .app__reservations-title{
+        margin: 0;
+    }
+    .app__reservations__form-container img{
+        width: 100%;
+    }
+    .app__reservations__form-box{
+        width: auto;
+    }
+    .app__reservations-title h1{
+        font-size: 3.5rem;
+        margin: 1rem;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .app__reservations__form-container {
+        margin: 0.5rem;
+        margin-right: 1rem;
+    }
+    .app__reservations-title h1{
+        font-size: 3rem;
+    }
+    .app__reservations__input-container {
+        flex-direction: column;
+        width: auto;
+    }
+    .app__reservations__form-box{
+        align-items: center;
+    }
+    .app__reservations__form-box p {
+        align-self: center;
+        width: auto;
+    }
+}

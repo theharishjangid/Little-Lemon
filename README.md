@@ -2,6 +2,10 @@
 
 Welcome to the official website of Little Lemon Restaurant! Explore the culinary wonders of this cozy haven located in the heart of Chicago, where fresh flavors and a warm ambiance come together to create a delightful dining experience. This website, built using React, JavaScript, CSS, and HTML, is designed to provide you with a glimpse into the world of Little Lemon.
 
+## Website Link
+
+[Little Lemon Restaurant](https://theharishjangid.github.io/Little-Lemon/)
+
 ## About Little Lemon Restaurant
 
 Little Lemon is renowned for its innovative menu that draws inspiration from local ingredients. Our chefs craft a unique blend of savory classics and inventive dishes, ensuring a diverse range of options to tantalize your taste buds. We strive to create a memorable dining experience for patrons who appreciate a harmonious fusion of quality cuisine and an inviting atmosphere.

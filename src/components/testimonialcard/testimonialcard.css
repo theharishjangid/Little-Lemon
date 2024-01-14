@@ -1,62 +1,53 @@
 .card-layout {
     display: flex;
-    padding: 12px;
+    flex-wrap: wrap;
+    padding: 0.5rem;
     flex-direction: column;
-    gap: 12px;
-    border-radius: 16px;
-    border: 0.5px solid #6BDBB5;
-    background: #FFF;
-    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    border: 1px solid var(--accent-color-dark);
+    background-color: var(--white-color);
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 300px;
+    margin: 0.5rem;
 }
 
 .container {
     display: flex;
-    width: auto;
-    border-radius: 30px;
-    background: #FCF1E7;
+    border-radius: 30px 5px 5px 30px;
+    background: var(--secondary-color-light);
     align-items: center;
     align-self: auto;
-    margin: 5px;
 }
 
 .desc {
-    width: 264px;
     color: #000;
-    font-family: 'Karla';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-family: var(--font-secondary);
+    font-size: 0.75rem;
+    padding: 1rem 0;
+    min-height: 6.5rem;
 }
 
 .profile {
-    margin-bottom: 5px;
-    stroke-width: 2px;
-    stroke: #FFF;
-    padding-top: 4px;
-    padding-left: 4px;
+    width: 40px;
+    height: 40px;
+    margin: 0.25rem;
+    color: var(--primary-color);
 }
 
 .name {
-    color: #495E57;
-    font-family: Karla;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.rating {
-    height: 16px;
-    align-self: flex-start;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: var(--primary-color);
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .name-rating {
-    padding-left: 10px;
+    padding-left: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-content: flex-start;
+}
+
+.rating {
+    color: var(--primary-color);
+    margin: 0 2px;
 }

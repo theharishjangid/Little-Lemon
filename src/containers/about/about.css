@@ -1,9 +1,9 @@
 .app__about {
     display: flex;
     flex-direction: column;
-    margin-top: 0 2rem;
     padding: 2rem;
     background-color: var(--bg-color);
+    align-items: center;
 }
 
 .app__about-container{
@@ -41,6 +41,7 @@
     box-shadow: -5.132px 5.132px 4.276px 0px rgba(0, 0, 0, 0.38);
     position: relative;
     left: 50%;
+    top:0%;
 }
 
 .image-2 {
@@ -77,30 +78,9 @@
     .app__about-container{
         flex-direction: column;
     }
-    .app__about-images{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .image-1 {
-        width: 250px;
-        top: 0;
-        right: 0;
-        left: 0;
-        align-self: center;
-        margin: 1rem;
-    }
-    .image-2 {
-        width: 250px;
-        top: 0;
-        right: 0;
-        left: 0;
-        align-self: center;
-        margin: 1rem;
-    }
     .app__about-title p{
-        font-size: 0.75rem;
-        padding: 0.75rem 0;
+        font-size: 1rem;
+        padding: 0.5rem 0;
     }
     .app__about-title h3{
         font-size: 1rem;
@@ -110,24 +90,49 @@
         font-size: 2rem;
         line-height: 30px;
     }
+    .app__about-title {
+        padding: 1rem;
+    }
+    .app__about-images{
+        height: 300px;
+        margin: 0 2rem;
+    }
+    .image-1 {
+        left: 40%;
+    }
+    .image-2 {
+        top: -30%;
+        right: -7%;
+    }
 }
 
 @media screen and (max-width: 500px){
     .app__about {
-        margin-top: 1rem;
-        padding: 1rem
+        padding: 0.5rem
     }
     .app__about-container{
         padding: 0rem;
     }
     .app__about-images{
-        display: flex;
-        flex-direction: column;
+        display: block;
+    }
+    .app__about-title {
+        padding: 0.5rem;
+    }
+    .app__about-title p{
+        padding-bottom: 0;
+    }
+    .app__about-images{
+        height: 190px;
+        margin: 0 2rem;
     }
     .image-1 {
-        width: 200px;
+        width: 180px;
+        left: 43%;
     }
     .image-2 {
-        width: 200px;
+        width: 180px;
+        top: -30%;
+        right: -5%;
     }
 }

@@ -1,71 +1,78 @@
 .special-card-layout {
     width: 300px;
-    height: 547px;
-    border-radius: 16px;
-    border: 1px solid #FBDABB;
-    background: linear-gradient(0deg, #FFEEDE 0%, rgba(255, 254, 253, 0.28) 48.96%);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: 1px solid var(--accent-color-dark);
+    background-color: var(--accent-color-light);
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1rem 0;
 }
 
 .special-card-title{
     overflow: hidden;
-    color: #000;
+    color: var(--highlight-color-dark);
     text-overflow: ellipsis;
-    font-family: 'Markazi Text';
-    font-size: 24px;
+    font-family: var(--font-base);
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 90%;
+    line-height: 50%;
 }
 
 .special-card-price {
-    color: #EE9972;
-    font-family: 'Karla';
-    font-size: 16px;
+    color: var(--secondary-color);
+    font-family: var(--font-secondary);
+    font-size: 1rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 
 .special-card-desc {
-    width: 238px;
-    height: 134px;
+    min-height: 100px;
     flex-shrink: 0;
-    color: #495E57;
-    font-family: Karla;
-    font-size: 16px;
-    font-style: normal;
+    color: var(--gray-color);
+    font-family: var(--font-secondary);
+    font-size: 0.80rem;
     font-weight: 400;
-    line-height: normal;
 }
 
 .special-card-delivery {
-    width: 156.872px;
-    height: 31.804px;
     flex-shrink: 0;
-    color: #333;
-    font-family: Karla;
-    font-size: 16px;
+    color: var(--highlight-color-dark);
+    font-family: var(--font-secondary);
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .special-card-image {
-    width: 300px;
+    width: 298px;
     height: 300px;
     flex-shrink: 0;
     clip: auto;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .special-card-details {
-    padding: 20px;
+    padding: 1rem;
 }
 
 .card-head {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 0.75rem;
+    align-items: center;
+}
+
+.special-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.special-card-delivery-icon{
+    width: 25px;
+    height: 25px;
 }

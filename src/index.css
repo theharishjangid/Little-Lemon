@@ -9,10 +9,11 @@
   --bg-color-nav: #eaf4f1;
   --primary-color: #495E57;
   --secondary-color: #F4CE14;
+  --secondary-color-light: #f5ecbcb0;
   --highlight-color-light: #EDEFEE;
   --highlight-color-dark: #333333;
-  --accent-color-dark: #EE9972;
-  --accent-color-light: #FBDABB;
+  --accent-color-dark: #6d8d83e9;
+  --accent-color-light: #dcfef49e;
   --gray-color: #6b7688;
   --white-color: #ffffff;
 }

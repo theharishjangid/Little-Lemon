@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import { Link }  from 'react-router-dom';
 import './nav.css';
 import Logo from '../../assets/Logo.svg';
-import Menu from '../../assets/hamburger menu.svg';
-import Cross from '../../assets/x-symbol.svg'
+import { FiMenu } from "react-icons/fi";
+import { IoCloseOutline } from "react-icons/io5";
 
 const Nav = () => {
   const [toggle, setToggle] = useState(false)
@@ -25,17 +25,20 @@ const Nav = () => {
         </li>
       </ul>
       <div className='app__navbar-menu'>
-          <img src={Menu} onClick={()=> setToggle(true)} alt='menu' aria-label="On Click"/>
+          <FiMenu className="nav-menu-button" onClick={()=> setToggle(true)} aria-label="On Click"/>
           {
             toggle && (
               <div>
-                <img src={Cross} onClick={()=> setToggle(false)} alt='cross-icon' aria-label="On Click"/>
+                <IoCloseOutline className="nav-close-button" onClick={()=> setToggle(false)} aria-label="On Click"/>
                 <ul>
-                  {['Home', 'About', 'Menu', 'Reservations', 'Order Online'].map((item) => (
+                  {['home', 'about', 'specials', 'testimonials'].map((item) => (
                     <li key={`link-${item}`}>
                     <a aria-label="On Click" href={`#${item}`} onClick={()=> setToggle(false)}>{item}</a>
                     </li>
                   ))}
+                  <li className='app__flex p-text' key="reservations">
+                    <Link to="/reservations">reservations</Link>
+                  </li>
                 </ul>
               </div>
             )

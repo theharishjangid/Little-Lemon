@@ -1,6 +1,6 @@
 import React from 'react'
 import './cards.css'
-import {PrimaryButton, SpecialsCard} from '../../components'
+import {SpecialsCard} from '../../components'
 import Salad from '../../assets/greek salad.jpg'
 import Dessert from '../../assets/lemon dessert.jpg'
 import Bruschetta from '../../assets/bruchetta.svg'
@@ -31,7 +31,6 @@ const Cards = () => {
     <div className='app__cards' id='specials'>
         <div className='app__cards-header'>
             <h2>This Weeks Specials!</h2>
-            <PrimaryButton name="Order Online" />
         </div>
         <div className='app__cards-section'>
           {

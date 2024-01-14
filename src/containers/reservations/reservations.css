@@ -8,6 +8,7 @@
 
 .app__reservations h1{
     margin: 2rem;
+    font-size: 4rem;
 }
 
 .app__reservations__form-container {
@@ -93,10 +94,37 @@ sup {
     justify-content: center;
 }
 
-.back_button img{
-    width:20px;
-    height: 20px;
-    filter: invert(100%);
+.close-button{
+    width:35px;
+    height: 35px;
+    color: var(--secondary-color);
+}
+
+.form_submit{
+    align-items: center;
+}
+
+.form_submit h2{
+    color: var(--secondary-color);
+}
+
+.form_submit p{
+    width: auto;
+    margin: 1rem;
+}
+
+.emoji{
+    height:50px;
+    width: 50px;
+    color: var(--secondary-color);
+    margin: 0.5rem;
+}
+
+.nav-back-buttons{
+    display: flex;
+    margin-top: 4rem;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 850px){
@@ -109,7 +137,6 @@ sup {
         margin: 2rem;
     }
     .app__reservations-title h1{
-        font-size: 4rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }

@@ -14,8 +14,13 @@
     cursor: pointer;
 }
 
-.primary_button:hover{
-    border: solid 1px var(--secondary-color);
+.primary_button:hover:enabled{
+    border-left: solid 2px var(--secondary-color);
+    border-right: solid 2px var(--secondary-color);
+}
+
+.primary_button:disabled{
+    background: var(--secondary-color-light);
 }
 
 .primary_button-link {

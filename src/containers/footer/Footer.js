@@ -36,7 +36,7 @@ const Footer = () => {
             <br />
             (555) 123-4567
           </p>
-          <p>info@littlelemons.com</p>
+          <p>info@littlelemon.com</p>
         </div>
         <div class="app__footer-container">
           <h4>Social Media</h4>

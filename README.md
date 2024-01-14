@@ -12,6 +12,8 @@ Little Lemon is renowned for its innovative menu that draws inspiration from loc
 
 - **Testimonials**: Read what our happy customers have to say about their experiences at Little Lemon. Discover stories that highlight the joy and satisfaction our dishes bring to our patrons.
 
+- **Table Reservation**: Secure your spot for an exquisite dining experience by easily reserving a table through our website.
+
 - **Contact Information**: Easily find our location, contact details, and operating hours.
 
 ## Technologies Used

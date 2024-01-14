@@ -13,7 +13,7 @@ const Nav = () => {
         <img src={Logo} alt='Logo' className='logo'/>
       </div>
       <ul className='app__navbar-links'>
-        {['home', 'about', 'specials', 'testimonials'].map((item) => (
+        {['home', 'specials', 'testimonials', 'about'].map((item) => (
           <li key={`link-${item}`} className='app__flex p-text'>
             <div></div>
             <a href={`#${item}`}>{item}</a>
@@ -31,7 +31,7 @@ const Nav = () => {
               <div>
                 <IoCloseOutline className="nav-close-button" onClick={()=> setToggle(false)} aria-label="On Click"/>
                 <ul>
-                  {['home', 'about', 'specials', 'testimonials'].map((item) => (
+                  {['home', 'specials', 'testimonials', 'about'].map((item) => (
                     <li key={`link-${item}`}>
                     <a aria-label="On Click" href={`#${item}`} onClick={()=> setToggle(false)}>{item}</a>
                     </li>
